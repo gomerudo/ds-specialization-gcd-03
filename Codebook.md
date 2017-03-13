@@ -1,0 +1,155 @@
+# Codebook for the data generated in the last step of this project
+
+This codebook describes the variables of the last data frame generated and from which the txt file has been uploaded.
+
+## Data Frames
+**tidyDataAvg**: Data frame with the resulting tidy data. This data represent the average value reported in the mean and std measures for each subject in each one of the activities.
+
+### Variables
+**SUBJECT**: Numeric. Range 1-30. Number identifyng the subject that performed each activity
+
+**REPORTED_ACTVITIY**: Character. Name of the actitivy. 
+
+#### Features
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals. 
+
+These time domain signals (prefix 'TIME' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TIME_BODY_ACCELEROMETER-XYZ and TIME_GravityACCELEROMETER-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TIME_BODY_ACCELEROMETER_JERK_XYZ and TIME_BODY_GYROSCOPE_JERK_XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TIME_BODY_ACCELEROMETER_MAGNITUDE, TIME_GravityACCELEROMETER_MAGNITUDE, TIME_BODY_ACCELEROMETER_JERK_MAGNITUDE, TIME_BODY_GYROSCOPE_MAGNITUDE, TIME_BODY_GYROSCOPE_JERK_MAGNITUDE). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FREQUENCY_BODY_ACCELEROMETER_XYZ, FREQUENCY_BODY_ACCELEROMETER_JERK_XYZ, FREQUENCY_BODY_GYROSCOPE_XYZ, FREQUENCY_BODY_GYROSCOPE_JERK_MAGNITUDE, FREQUENCY_BODY_GYROSCOPE_MAGNITUDE, FREQUENCY_BODY_GYROSCOPE_JERK_MAGNITUDE.  
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'_XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+**TIME_BODY_ACCELEROMETER_MEAN_X**
+
+**TIME_BODY_ACCELEROMETER_MEAN_Y**
+
+**TIME_BODY_ACCELEROMETER_MEAN_Z**
+
+**TIME_BODY_ACCELEROMETER_STD_X**
+
+**TIME_BODY_ACCELEROMETER_STD_Y**
+
+**TIME_BODY_ACCELEROMETER_STD_Z**
+
+**TIME_GravityACCELEROMETER_MEAN_X**
+
+**TIME_GravityACCELEROMETER_MEAN_Y**
+
+**TIME_GravityACCELEROMETER_MEAN_Z**
+
+**TIME_GravityACCELEROMETER_STD_X**
+
+**TIME_GravityACCELEROMETER_STD_Y**
+
+**TIME_GravityACCELEROMETER_STD_Z**
+
+**TIME_BODY_ACCELEROMETER_JERK_MEAN_X**
+
+**TIME_BODY_ACCELEROMETER_JERK_MEAN_Y**
+
+**TIME_BODY_ACCELEROMETER_JERK_MEAN_Z**
+
+**TIME_BODY_ACCELEROMETER_JERK_STD_X**
+
+**TIME_BODY_ACCELEROMETER_JERK_STD_Y**
+
+**TIME_BODY_ACCELEROMETER_JERK_STD_Z**
+
+**TIME_BODY_GYROSCOPE_MEAN_X**
+
+**TIME_BODY_GYROSCOPE_MEAN_Y**
+
+**TIME_BODY_GYROSCOPE_MEAN_Z**
+
+**TIME_BODY_GYROSCOPE_STD_X**
+
+**TIME_BODY_GYROSCOPE_STD_Y**
+
+**TIME_BODY_GYROSCOPE_STD_Z**
+
+**TIME_BODY_GYROSCOPE_JERK_MEAN_X**
+
+**TIME_BODY_GYROSCOPE_JERK_MEAN_Y**
+
+**TIME_BODY_GYROSCOPE_JERK_MEAN_Z**
+
+**TIME_BODY_GYROSCOPE_JERK_STD_X**
+
+**TIME_BODY_GYROSCOPE_JERK_STD_Y**
+
+**TIME_BODY_GYROSCOPE_JERK_STD_Z**
+
+**TIME_BODY_ACCELEROMETER_MAGNITUDE_MEAN**
+
+**TIME_BODY_ACCELEROMETER_MAGNITUDE_STD**
+
+**TIME_GravityACCELEROMETER_MAGNITUDE_MEAN**
+
+**TIME_GravityACCELEROMETER_MAGNITUDE_STD**
+
+**TIME_BODY_ACCELEROMETER_JERK_MAGNITUDE_MEAN**
+
+**TIME_BODY_ACCELEROMETER_JERK_MAGNITUDE_STD**
+
+**TIME_BODY_GYROSCOPE_MAGNITUDE_MEAN**
+
+**TIME_BODY_GYROSCOPE_MAGNITUDE_STD**
+
+**TIME_BODY_GYROSCOPE_JERK_MAGNITUDE_MEAN**
+
+**TIME_BODY_GYROSCOPE_JERK_MAGNITUDE_STD**
+
+**FREQUENCY_BODY_ACCELEROMETER_MEAN_X**
+
+**FREQUENCY_BODY_ACCELEROMETER_MEAN_Y**
+
+**FREQUENCY_BODY_ACCELEROMETER_MEAN_Z**
+
+**FREQUENCY_BODY_ACCELEROMETER_STD_X**
+
+**FREQUENCY_BODY_ACCELEROMETER_STD_Y**
+
+**FREQUENCY_BODY_ACCELEROMETER_STD_Z**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_MEAN_X**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_MEAN_Y**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_MEAN_Z**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_STD_X**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_STD_Y**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_STD_Z**
+
+**FREQUENCY_BODY_GYROSCOPE_MEAN_X**
+
+**FREQUENCY_BODY_GYROSCOPE_MEAN_Y**
+
+**FREQUENCY_BODY_GYROSCOPE_MEAN_Z**
+
+**FREQUENCY_BODY_GYROSCOPE_STD_X**
+
+**FREQUENCY_BODY_GYROSCOPE_STD_Y**
+
+**FREQUENCY_BODY_GYROSCOPE_STD_Z**
+
+**FREQUENCY_BODY_ACCELEROMETER_MAGNITUDE_MEAN**
+
+**FREQUENCY_BODY_ACCELEROMETER_MAGNITUDE_STD**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_MAGNITUDE_MEAN**
+
+**FREQUENCY_BODY_ACCELEROMETER_JERK_MAGNITUDE_STD**
+
+**FREQUENCY_BODY_GYROSCOPE_MAGNITUDE_MEAN**
+
+**FREQUENCY_BODY_GYROSCOPE_MAGNITUDE_STD**
+
+**FREQUENCY_BODY_GYROSCOPE_JERK_MAGNITUDE_MEAN**
+
+**FREQUENCY_BODY_GYROSCOPE_JERK_MAGNITUDE_STD**
