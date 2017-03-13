@@ -207,4 +207,7 @@ doAnalysis <- function() {
   tidyDataAvg <<- select(tidyData, -GROUP)
   tidyDataAvg <<- aggregate(. ~SUBJECT + REPORTED_ACTIVITY, tidyDataAvg, mean)
   tidyDataAvg <<- arrange(tidyDataAvg, SUBJECT, REPORTED_ACTIVITY)
+  
+  # Write data
+  write.table(tidyDataAvg, file = FINAL_DATA_FILE, row.name=FALSE, sep = "\t")
 }
